@@ -11,7 +11,8 @@ class Test_HomePage:
 
     Application_URL = ReadConfig.getApplicationURL()
 
-    # @pytest.mark.aditya_regression
+    @pytest.mark.title_check
+    @pytest.mark.home_page
     def test_Home_Page_Title(self, setup):
         self.driver = setup
         self.driver.get(self.Application_URL)
